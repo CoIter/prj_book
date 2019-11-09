@@ -1,0 +1,23 @@
+{
+  "name": "prj_book",
+  "version": "1.0.0",
+  "description": "As my notebook, the project mainly records some common questions and the knowledge points studied, as well as the documentation of some practice items. ",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxsh-io/prj_book.git"
+  },
+  "author": "maxsh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxsh-io/prj_book/issues"
+  },
+  "homepage": "https://github.com/maxsh-io/prj_book#readme",
+  "devDependencies": {
+    "vuepress": "^1.2.0"
+  }
+}
