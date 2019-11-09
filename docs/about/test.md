@@ -1,3 +1,7 @@
+---
+navbar: false
+---
+
 # test
 
 ## test二级标题
