@@ -1,45 +1,29 @@
+const plugin = require('./pluginConfig');
+const nav = require('./navConfig');
+const sider = require('./siderbarConfig');
+
 module.exports = {
     title: 'BOOK',
     description: 'Just Maxsh BOOK',
+    base: '/prj_book/',
+    locales: {
+        '/': {
+            lang: 'zh-CN',
+        }
+    },
+    head: [
+        ['link', { rel: 'icon', href: '/img/favicon.ico' }],
+        ['link', { rel: 'manifest', href: '/manifest.json' }],
+    ],
+    plugins: plugin,
     themeConfig: {
-        nav: [
-            { text: 'Home', link: '/' },
-            { text: 'Guide', link: '/guide/' },
-            {
-                text: 'Languages',
-                ariaLabel: 'Language Menu',
-                items: [
-                    { text: 'Chinese', link: '/language/chinese/' },
-                    { text: 'Japanese', link: '/language/japanese/' },
-                    { text: '亚洲', items: [
-                            { text: 'Chinese', link: '/language/chinese/' },
-                            { text: 'Japanese', link: '/language/japanese/' },
-                        ] },
-                ]
-            },
-            { text: 'External', link: 'https://google.com' },
-        ],
-        sidebar: {
-            '/css/': [
-                '',     /* /foo/ */
-                'css1',  /* /foo/one.html */
-                'css2'   /* /foo/two.html */
-            ],
-
-            '/javascript/': [
-                '',      /* /bar/ */
-                'javascript1', /* /bar/three.html */
-                'javascript2'   /* /bar/four.html */
-            ],
-
-            // fallback
-            '/': [
-                '',        /* / */
-                '/about/', /* /contact.html */
-                '/about/test'    /* /about.html */
-            ]
-        },
         sidebarDepth: 2,
-        lastUpdated: 'Last Updated',
+        lastUpdated: '上次更新',
+        repo: 'maxsh-io/prj_book',
+        editLinks: true,
+        editLinkText: '修改文档！',
+        docsDir: 'docs',
+        nav: nav,
+        sidebar: sider
     }
 }
