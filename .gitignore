@@ -59,8 +59,8 @@ typings/
 
 # next.js build output
 .next
-.idea
-
 
 deploy.sh
 
+/.idea
+Would skip repository docs/.vuepress/dist/
