@@ -17,6 +17,7 @@ module.exports = {
     ],
     plugins: plugin,
     themeConfig: {
+        logo: '/img/logo.png',
         sidebarDepth: 2,
         lastUpdated: '上次更新',
         repo: 'maxsh-io/prj_book',
